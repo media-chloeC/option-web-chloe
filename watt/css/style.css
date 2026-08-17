@@ -1,5 +1,17 @@
-/* P4 : remplacez ce commentaire par le reset de l’atelier. */
-/* à vous : reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 body {
   background: #0a0a0a;
@@ -10,8 +22,12 @@ body {
 
 /* P5 : le parent rangera ses trois enfants. */
 header {
-  /* à vous : display, colonnes, alignement et gap */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 0.85rem 1rem;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
   background: #0a0a0a;
   border-bottom: 1px solid #2a2a2a;
 }
@@ -25,7 +41,9 @@ header h1 {
 }
 
 nav {
-  /* à vous : flex, retour à la ligne et gap */
+display: flex;
+flex-wrap: wrap;
+gap: 1.25rem;
 }
 
 nav a {
